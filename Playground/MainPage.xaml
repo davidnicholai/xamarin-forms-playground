@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Playground" x:Class="Playground.MainPage">
+    <StackLayout Margin="10,50,10,10">
+        <ActivityIndicator IsRunning="{Binding IsRunningSpinner}" IsVisible="{Binding IsVisibleSpinner}"  />
+        <Label Text="{Binding IsRunningText}" HorizontalTextAlignment="Center" />
+        <Label Text="{Binding IsVisibleText}" HorizontalTextAlignment="Center" />
+        <Button Text="Toggle IsRunning" Command="{Binding IsRunningCommand}" />
+        <Button Text="Toggle IsVisible" Command="{Binding IsVisibleCommand}" />
+        <BoxView HeightRequest="1" Color="Black" />
+        
+        <Label Text="Findings:" />
+        <Label Text="The spinner only shows when IsRunning and IsVisible are true." />
+        <Label Text="When IsVisible is false, the space that the component uses up becomes free." />
+    </StackLayout>
+</ContentPage>
