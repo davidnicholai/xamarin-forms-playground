@@ -23,36 +23,10 @@ namespace Playground
             set { SetProperty(ref _isVisibleSpinner, value); }
         }
 
-        private string _isRunningText;
-        public string IsRunningText
-        {
-            get { return _isRunningText; }
-            set { SetProperty(ref _isRunningText, value); }
-        }
-
-        private string _isVisibleText;
-        public string IsVisibleText
-        {
-            get { return _isVisibleText; }
-            set { SetProperty(ref _isVisibleText, value); }
-        }
-
         public MainPageViewModel()
         {
-            IsRunningCommand = new Command(() =>
-            {
-                IsRunningSpinner = !IsRunningSpinner;
-                IsRunningText = "IsRunning: " + IsRunningSpinner.ToString();
-            });
-
-            IsVisibleCommand = new Command(() =>
-            {
-                IsVisibleSpinner = !IsVisibleSpinner;
-                IsVisibleText = "IsVisible: " + IsVisibleSpinner.ToString();
-            });
-
-            IsRunningText = "IsRunning: " + IsRunningSpinner.ToString();
-            IsVisibleText = "IsVisible: " + IsVisibleSpinner.ToString();
+            IsRunningCommand = new Command(() => IsRunningSpinner = !IsRunningSpinner);
+            IsVisibleCommand = new Command(() => IsVisibleSpinner = !IsVisibleSpinner);
         }
     }
 }
