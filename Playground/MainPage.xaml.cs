@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Playground
@@ -12,6 +8,11 @@ namespace Playground
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void ActivityIndicatorPage_Clicked(object sender, EventArgs eventArgs)
+        {
+            await Navigation.PushAsync(new ActivityIndicator.ActivityIndicatorPage());
         }
     }
 }
