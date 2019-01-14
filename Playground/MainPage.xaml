@@ -4,10 +4,6 @@
              xmlns:local="clr-namespace:Playground"
              x:Class="Playground.MainPage"
              Title="Main Menu">
-    <ContentPage.BindingContext>
-        <local:MainPageViewModel />
-    </ContentPage.BindingContext>
-    
     <StackLayout Margin="10">
         <Button Text="Activity Indicator Page" Clicked="ActivityIndicatorPage_Clicked" />
     </StackLayout>
