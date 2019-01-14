@@ -15,6 +15,8 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Gorilla|Any CPU = Gorilla|Any CPU
+		Gorilla|iPhoneSimulator = Gorilla|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
@@ -33,6 +35,8 @@ Global
 		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
 		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|iPhoneSimulator
+		{F335EE39-1938-4417-A6CC-745073EE8DE2}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|iPhoneSimulator
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
@@ -49,6 +53,8 @@ Global
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|iPhoneSimulator
+		{B8516711-4B40-4DE8-B00F-6B708FA2C642}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
