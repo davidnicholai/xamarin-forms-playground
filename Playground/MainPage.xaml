@@ -6,5 +6,6 @@
              Title="Main Menu">
     <StackLayout Margin="10">
         <Button Text="Activity Indicator Page" Clicked="ActivityIndicatorPage_Clicked" />
+        <Button Text="Tasks Page" Clicked="TasksPage_Clicked" />
     </StackLayout>
 </ContentPage>

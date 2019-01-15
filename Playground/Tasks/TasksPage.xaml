@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:tasks="clr-namespace:Playground.Tasks" x:Class="Playground.Tasks.TasksPage">
+    <ContentPage.BindingContext>
+        <tasks:TasksPageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Button Text="Start Task" Command="{Binding StartTaskCommand}" />
+        <Button Text="Refresh Status" Command="{Binding RefreshStatusCommand}" />
+        <Label Text="{Binding TaskStatus}" />
+
+        <BoxView HeightRequest="1" Color="Black" />
+
+        <Button Text="Start Task Async" Command="{Binding StartTaskAsyncCommand}" />
+
+        <BoxView HeightRequest="1" Color="Black" />
+
+        <Label Text="{Binding WeatherData}" />
+        
+        <!-- The ActivityIndicator is only needed to see if we're blocking the main thread. If the spinning stops then we've blocked it. -->
+        <ActivityIndicator IsRunning="true" IsVisible="true" />
+    </StackLayout>
+</ContentPage>

@@ -14,5 +14,10 @@ namespace Playground
         {
             await Navigation.PushAsync(new ActivityIndicator.ActivityIndicatorPage());
         }
+
+        private async void TasksPage_Clicked(object sender, EventArgs eventArgs)
+        {
+            await Navigation.PushAsync(new Tasks.TasksPage());
+        }
     }
 }
